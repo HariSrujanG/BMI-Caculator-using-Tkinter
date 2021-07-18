@@ -1,4 +1,5 @@
 from tkinter import*
+import math
 
 def calculate():
     a = h.get()
@@ -6,7 +7,7 @@ def calculate():
     b = w.get()
     wt = float(b)
     bmi = wt/pow(ht,2)
-    r.set(bmi)
+    r.set(math.floor(bmi*10000))
 
 bmi = Tk()
 bmi.title('BMI calculator')
